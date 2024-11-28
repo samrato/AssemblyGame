@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Laguages() {
+function Languages() {
     const languages = [
         {
             name: "HTML",
@@ -48,15 +48,16 @@ function Laguages() {
             color: "#F9F4DA",
         },
     ]
-          const LangageElements= languages.map((lang) => (
-            <span
+    
+             const LangageElements= languages.map((lang,index) => (
+            <span className=''
             key={lang.name}
             style={{
                 backgroundColor: lang.backgroundColor,
                 color: lang.color,
                 padding: "5px 10px",
                 margin: "5px",
-                borderRadius: "5px",
+                borderRadius: "3px",
                 display: "inline-block",
             }}
         >
@@ -64,11 +65,11 @@ function Laguages() {
         </span>
     ))
   return (
-    <div>
+    <div className='flex flex-wrap justify-content-center w-3'>
   
 { LangageElements}
     </div>
   )
 }
 
-export default Laguages
+export default Languages

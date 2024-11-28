@@ -1,5 +1,6 @@
+import AnotherSection from "./components/AnotherSection"
 import Header from "./components/Header"
-import Laguages from "./components/Laguages"
+import Laguages from "./components/Languages"
 import Section from "./components/Section"
 
 
@@ -10,6 +11,7 @@ function App() {
      <Header/>
      <Section/>
      <Laguages/>
+     <AnotherSection/>
     </>
   )
 }
