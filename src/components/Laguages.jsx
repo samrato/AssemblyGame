@@ -48,9 +48,9 @@ function Laguages() {
             color: "#F9F4DA",
         },
     ]
-          const LangageElements= languages.map((lang, index) => (
+          const LangageElements= languages.map((lang) => (
             <span
-            key={index}
+            key={lang.name}
             style={{
                 backgroundColor: lang.backgroundColor,
                 color: lang.color,
