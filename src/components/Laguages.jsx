@@ -49,7 +49,19 @@ function Laguages() {
         },
     ]
           const LangageElements= languages.map((lang, index) => (
-        <span key={index}>{lang.name}</span>
+            <span
+            key={index}
+            style={{
+                backgroundColor: lang.backgroundColor,
+                color: lang.color,
+                padding: "5px 10px",
+                margin: "5px",
+                borderRadius: "5px",
+                display: "inline-block",
+            }}
+        >
+            {lang.name}
+        </span>
     ))
   return (
     <div>
