@@ -65,7 +65,7 @@ function Languages() {
         </span>
     ))
   return (
-    <div className='flex flex-wrap justify-content-center w-3'>
+    <div className='flex flex-wrap justify-content-center w-4'>
   
 { LangageElements}
     </div>
